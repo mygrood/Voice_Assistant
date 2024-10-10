@@ -9,3 +9,5 @@
 - Список задач
 - Команда музыка
 - Информация о компьютере
+
+[Download](https://github.com/mygrood/Voice_Assistant/releases/download/v1.0/assist.exe)
