@@ -326,7 +326,7 @@ class Assistant(QtWidgets.QMainWindow,interface.Ui_MainWindow,threading.Thread):
         text+='Оперативная память: Всего '+ str(mem_total) + ' МБ, Используется '+ str(mem_used) +'МБ\n'
 
         # Получаем информацию о видеокарте
-        w = wmi.WMI(namespace="root\cimv2")
+        w = wmi.WMI(namespace=r"root\cimv2")
         gpu_info = w.query("SELECT * FROM Win32_VideoController")[0]
         gpu_name = gpu_info.name
         text+='Видеокарта: '+gpu_name+'\n'
